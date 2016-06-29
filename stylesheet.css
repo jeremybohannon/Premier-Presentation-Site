@@ -271,3 +271,10 @@ h3{
 #scala_word{
 	margin-left: 10px;
 }
+
+.dbDiff{
+	width: 150px;
+	height: auto;
+	z-index: 2;
+	display: inline;
+}

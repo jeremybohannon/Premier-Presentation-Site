@@ -111,6 +111,8 @@ $(function () {
             }
             if(getPosition(dbMiddle).y + 30 >= getPosition(O5).y ){
               O5.style.opacity = "1";
+            } else {
+              O5.style.opacity = "0";
             }
           }
         }
