@@ -26,6 +26,26 @@ $(function () {
   var O4 = document.getElementById("O4");
   var O5 = document.getElementById("O5");
 
+  var diff5 = document.getElementById("diff5");
+  var diff6 = document.getElementById("diff6");
+  var diff7 = document.getElementById("diff7");
+  var diff8 = document.getElementById("diff8");
+
+  var dbGolden1 = document.getElementById("dbGolden1");
+  var dbGolden1 = document.getElementById("dbGolden2");
+  var dbGolden1 = document.getElementById("dbGolden3");
+  var dbGolden1 = document.getElementById("dbGolden4");
+
+  var dbGreen5 = document.getElementById("dbGreen5");
+  var dbGreen6 = document.getElementById("dbGreen6");
+  var dbGreen7 = document.getElementById("dbGreen7");
+  var dbGreen8 = document.getElementById("dbGreen8");
+
+  var dbRed5 = document.getElementById("dbRed5");
+  var dbRed6 = document.getElementById("dbRed6");
+  var dbRed7 = document.getElementById("dbRed7");
+  var dbRed8 = document.getElementById("dbRed8");
+
   var dagH2 = document.getElementById("dagH2");
 
   $(window).on('scroll', master);
@@ -114,6 +134,33 @@ $(function () {
             } else {
               O5.style.opacity = "0";
             }
+
+            if(getPosition(dbMiddle).y >= getPosition(diff5).y ){
+              diff5.style.display = "none";
+              dbGreen5.style.display = "inline";
+            } else {
+
+            }
+            if(getPosition(dbMiddle).y >= getPosition(diff6).y ){
+              diff6.style.display = "none";
+              dbGreen6.style.display = "inline";
+            } else {
+
+            }
+            if(getPosition(dbMiddle).y >= getPosition(diff7).y ){
+              diff7.style.display = "none";
+              dbRed7.style.display = "inline";
+            } else {
+
+            }
+            if(getPosition(dbMiddle).y >= getPosition(diff8).y ){
+              diff8.style.display = "none";
+              dbGreen8.style.display = "inline";
+            } else {
+
+            }
+
+
           }
         }
       }

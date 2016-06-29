@@ -277,4 +277,20 @@ h3{
 	height: auto;
 	z-index: 2;
 	display: inline;
+	transition: 1s display;
+}
+
+.dbDiffGreen{
+	display: none;
+	transition: 1s display;
+}
+
+.dbDiffRed{
+	display: none;
+	transition: 1s display;
+}
+
+.dbDiffGolden{
+	
+
 }
