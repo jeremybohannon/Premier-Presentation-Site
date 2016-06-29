@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <link rel="stylesheet" href="/bootstrap-3.3.6-dist/css/bootstrap.css" crossorigin="anonymous">
+
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="/stylesheet.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+      <script type="text/javascript" src="/app.js"></script>
+  </head>
+  <body>
+
+  	<div class="data-flow">
+      <div class="row">
+        <div class="col-xs-4">
+          <img src="/icons/hadoop.svg" class="fixed" class="icon" id="left"></img>
+        </div>
+        <div class="col-xs-4">
+          <img src="/icons/dbMiddle.png" class="fixed" id="middle"></img>
+        </div>
+        <div class="col-xs-4">
+          <img src="/icons/spark_star.png" class="fixed" class="icon" id="right"></img>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-4">
+          <img src="/icons/Maven_Logo.svg" class="fixed" class="icon" id="mavenLogo"></img>
+        </div>
+        <div class="col-xs-4">
+
+        </div>
+        <div class="col-xs-4">
+          <h2 class=fixed id="mavenDesc">Maven is a build automation tool that we used to automatically compile and install our project with all required dependecies</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-4">
+        <img src="/icons/oozie.png" class="fixed" class="icon" id="oozieLogo"></img>
+      </div>
+      <div class="col-xs-4">
+
+      </div>
+      <div class="col-xs-4">
+        <img src="/icons/spark_star.png" class="fixed" class="icon" id="sparkStar"></img>
+      </div>
+    </div>
+  </div>
+
+    <div class="section" id="header">
+      <h1>
+        Project Renaissance
+      </h1>
+      <br>
+      <br>
+      <h2 style="text-decoration: underline">
+        Mission
+      </h2>
+      <h2 id="header-description">
+        <br>
+        To continulally integrate the pcd-workflow build in order to promote frequent code contributions and early bug detection.
+      </h2>
+      <br>
+      <br>
+      <h2 style="text-decoration: underline">
+        Project Description
+      </h2>
+      <h2 id="header-description">
+        <br>
+          For this project I performed automated acceptance testing with a multitude of technologies including:
+          Bamboo, Maven, Docker, Hadoop, Apache Spark, Oozie, and Scala. With the coordination of these technologies we are able to
+          run mockdata through our build end-to-end and compare the result to a golden data set. If the two data sets match we know our build is solid and
+          deemed a release candidate.
+        </h2>
+    </div>
+    <div class="spacer">
+
+    </div>
+    <div class="section" id="ci">
+      <div class="row" style="height=100%">
+		    <div class="col-xs-4">
+          <h1>
+            Jenkins
+          </h1>
+          <div id="image_coupler">
+			      <img src="/icons/jenkins.png" class="icon" id="jenkins">
+            <img src="/icons/jenkins_mad.svg" class="icon" id="jenkins_mad">
+          </div>
+          <br>
+          <br>
+          <h2>
+            Jenkins is an open source continuous integration tool that was initially used but later determined
+            not to be the most optimal solution in the long end.
+          </h2>
+        </div>
+		    <div class="col-xs-4">
+          <div>
+			      <img src="/icons/vs.png" id="vs">
+          </div>
+		    </div>
+		    <div class="col-xs-4" id="hFix">
+            <h1>
+              Bamboo
+            </h1>
+            <div style="overflow:hidden">
+  			      <img src="/icons/bamboo.png" class="icon" id="bamboo">
+            </div>
+            <br>
+            <br>
+            <br>
+            <h2>
+              Bamboo is a continuous intgration service from Atlassian that
+              was chosen for this project due to its quick deployment time.
+            </h2>
+        </div>
+
+      </div>
+      <div id="mavenT"></div>
+    </div>
+    <div class="spacer">
+
+    </div>
+    <div class="spacer">
+
+    </div>
+    <div class="spacer">
+      <div id="mavenTH"></div>
+    </div>
+    <div class="section" id="repo">
+      <div class="row">
+		    <div class="col-xs-4">
+          <h1>Sonatype Nexus</h1>
+          <img src="/icons/nexus.png" class="icon" id="nexus">
+			    <h2>
+            Sonatype Nexus is an artifcat respository application that stores all of our finalized build dependecies.
+          </h2>
+		    </div>
+		    <div class="col-xs-4" class="middle-col">
+          <img src="/icons/db_group.png" class="icon" id="dbAttach">
+			  </div>
+		    <div class="col-xs-4">
+			    <h1>Git</h1>
+          <img src="/icons/git.png" class="icon" id="git">
+			    <h2>
+            Git is a code repositry that keeps track of our current code and
+            previous versions in case a revert is ever warranted.
+          </h2>
+		    </div>
+      </div>
+      <div class="spacer">
+
+      </div>
+      <div class="spacer">
+
+      </div>
+    <div class="section" id="docker">
+      <div class="row">
+        <div class="col-xs-4">
+          <img src="/icons/docker.svg" class="icon">
+          <br>
+          <br>
+          <h2>
+            Docker is a tool that wraps your software in a completey independent system complete with all dependencies.
+            This guarantees that the software will run the same no matter its environment.
+          </h2>
+        </div>
+        <div class="col-xs-4">
+          <img src="/icons/container.png" class="icon" id="container">
+          <br>
+          <br>
+          <br>
+          <br>
+          <h2>
+        </div>
+        <div class="col-xs-4">
+          <img src="/icons/cloudera.svg" class="icon" id="cloudera">
+          <br>
+          <br>
+          <br>
+          <br>
+          <h2>
+            Cloudera provides a base image to create a Docker container.
+            This allows us to quickly set up a Hadoop environment which is required to run our build.
+          </h2>
+        </div>
+      </div>
+    </div>
+    <div>
+    </div>
+    <div class="spacer">
+
+    </div>
+    <div class="spacer">
+
+    </div>
+
+    </div>
+    <div class="section" id="workflow">
+      <div class="row">
+        <div class="row">
+          <div class="col-xs-4">
+            <img src="/icons/hadoop.svg" class="icon" id="hadoop">
+            <img src="/icons/hadoop_word.png" class="icon" class="fixed" id="hadoop_word"></img>
+            <br>
+            <br>
+            <h2>
+              Hadoop is a software framework that was used to store mock data and run spark jobs on a cluster
+          </div>
+          <div class="col-xs-4">
+
+          </div>
+          <div class="col-xs-4">
+            <img src="/icons/Spark.png" class="icon" id="spark">
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>
+              Spark is a big data processings framework built for speed. Spark ran all of our data analysis jobs in the project renaissance pipeline
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="spacer">
+
+    </div>
+    <div class="section" id="workflow_job">
+      <div class="row">
+        <div class="row">
+          <div class="col-xs-4">
+            <img src="/icons/oozie.png" class="icon" id="oozie">
+            <br>
+            <img src="/icons/spark_star.png"  class="oozie-star" id="O1"></img>
+            <br>
+            <img src="/icons/spark_star.png"  class="oozie-star" id="O2"></img>
+            <br>
+            <img src="/icons/spark_star.png"  class="oozie-star" id="O3"></img>
+            <br>
+            <img src="/icons/spark_star.png"  class="oozie-star" id="O4"></img>
+            <br>
+            <img src="/icons/spark_star.png"  class="oozie-star" id="O5"></img>
+            <br>
+          </div>
+          <div class="col-xs-4">
+
+          </div>
+          <div class="col-xs-4">
+            <br>
+            <h2>
+              Oozie is a workflow scheduler system that manages our Hadoop and Spark jobs.
+            </h2>
+            <br><br><br>
+            <br><br><br>
+            <br><br><br>
+            <br><br><br>
+            <h2 id="dagH2">
+              A complex directed acyclic graph of Spark jobs are triggered that performs the magical Project Renaissance data analysis.
+            </h2>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="spacer">
+
+    </div>
+    <div class="section" id="fileDif">
+      <div class="row">
+        <div class="col-xs-4">
+            <img src="/icons/scala.svg" class="icon" id="scala">
+            <img src="/icons/scala_word.png" class="icon" class="fixed" id="scala_word"></img>
+        </div>
+        <div class="col-xs-4" class="middle-col">
+
+        </div>
+        <div class="col-xs-4">
+          <h2>
+            Scala is a multiparadigm programming language that produces byte code that runs in the Java Virtual Machine. For our purposes we used
+            Scala to find any and all diferences between the processed mock data and the golden data set.
+          </h2>
+        </div>
+      </div>
+    <div class="spacer">
+
+    </div>
+    <div class="spacer">
+
+    </div>
+    <div class="spacer">
+
+    </div>
+    <div class="spacer">
+
+    </div>
+    <div class="spacer">
+
+    </div>
+    <div class="spacer">
+
+    </div>
+    <div class="spacer">
+
+    </div>
+    <div class="spacer">
+
+    </div>
+
+</body>
+<footer>
+
+</footer>
+</html>

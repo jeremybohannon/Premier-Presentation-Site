@@ -1,0 +1,273 @@
+*{
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+html{
+	min-width: 653px;
+}
+
+body{
+	background: #1b2432 url(/bg.jpg)
+	repeat 0 0;
+	z-index: -3;
+}
+
+.data-flow{
+	width: 100vw;
+	text-align: center;
+}
+
+.fixed{
+	position: fixed;
+	width: 150px;
+	height: auto;
+	top: 33%;
+	margin-left: -75px;
+	z-index: 0;
+}
+.oozie-star{
+	margin-top: 20px;
+	width: 150px;
+	height: auto;
+	z-index: 2;
+}
+#O1, #O2, #O3, #O4, #O5{
+	opacity: 0;
+	transition: .7s opacity
+}
+
+#left{
+	opacity: 0;
+	transition: 1s opacity;
+	left: auto;
+}
+#right{
+	opacity: 0;
+	transition: 1s opacity;
+	right: auto;
+	z-index: -1;
+}
+
+#dagH2{
+	opacity: 0;
+	transition: 1s opacity;
+}
+
+#middle{
+	width: 150px;
+	margin-left: -75px;
+	opacity: 0;
+	transition: 1.3s opacity, 1s width;
+
+}
+
+#mavenLogo, #mavenDesc{
+	opacity: 0;
+	transition: 1s opacity
+}
+
+#mavenDesc{
+	margin-right: 0%;
+	font-size: 40px;
+	margin-top: 3%;
+	width: auto;
+}
+
+#oozieLogo{
+	margin-top: 45px;
+	width: 200px;
+	height: auto;
+	margin-left: 166px;
+	visibility: hidden;
+}
+
+#sparkStar{
+	visibility: hidden;
+}
+
+#sparkStar{
+	margin-left: 9%;
+}
+
+#left4, #right4{
+	visibility: hidden;
+}
+
+.container-fluid{
+	width: 100%;
+	padding: 0px;
+}
+
+h1, h2, h3{
+	font-family: 'Source Sans Pro', sans-serif;
+	overflow: hidden;
+}
+
+h2{
+	margin-top: 0px;
+	color: white;
+	margin: 10px;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+h3{
+	margin: 10px;
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+
+#header{
+	text-align: center;
+}
+
+#header h1{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 5em;
+	color: white;
+	font-weight: 400;
+	letter-spacing: 9px;
+}
+
+#header-description{
+	overflow: hidden;
+	color: white;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	font-size: 24px;
+	width: 45%;
+}
+
+.icon{
+	width: 150px;
+	height: auto;
+	z-index: 2;
+}
+
+.row{
+	height: auto;
+	margin: 10px;
+}
+
+.col-xs-6{
+	height: 100%;
+	padding: 0;
+}
+
+.col-xs-4{
+	height: auto;
+	overflow: hidden;
+}
+
+#hFix{
+	height: 488px;
+}
+
+.section{
+		width: 100%;
+    height: 85vh auto;
+		overflow: hidden;
+		text-align: center;
+		color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.spacer{
+	width: 100%;
+	height: 50vh;
+}
+
+#spacer-container{
+	background-color: #003E52;
+	border-radius: 10px;
+	box-shadow: 5px 5px #002835;
+	width: 80%;
+	margin-left: 10%;
+	height: 150vh;
+	position: absolute;
+	z-index: 2;
+}
+
+#spacer-container-after{
+	width: 100%;
+	height: 150vh;
+}
+
+#vs{
+	font-size: 145px;
+	margin-top: 20%;
+}
+
+#jenkins_mad{
+	width: 175px;
+	display: none;
+}
+
+#bamboo{
+	animation: 4s rotateRight infinite linear;
+}
+
+@keyframes rotateRight{
+    0%{ transform:rotate(0deg); transform-origin:50% 50%; }
+    100%{ transform:rotate(360deg); }
+}
+
+#mavenLogo{
+	width: 550px;
+	margin-left: -225px;
+}
+
+#repo{
+	height: auto;
+	width: 100vw;
+}
+
+#docker{
+
+}
+
+#dbAttach{
+	margin-top: 20%;
+	width: 65%
+}
+#jenkins{
+	display: inline;
+}
+
+#container{
+	width: 100%;
+	height: 315px;
+	margin-top: 20%;
+	border: 5px solid #164e65;
+  background-color: #0e1525;
+}
+
+#cloudera{
+	margin-top: 45px;
+	width: 200px;
+	height: auto;
+}
+
+#oozie{
+	margin-top: 45px;
+  width: 200px;
+  height: auto;
+}
+
+#hadoop{
+	top: 0px;
+	left:0px;
+}
+
+#spark{
+	top: 0px;
+}
+
+#scala_word{
+	margin-left: 10px;
+}
