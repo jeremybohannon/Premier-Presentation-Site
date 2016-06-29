@@ -109,6 +109,9 @@ $(function () {
             } else {
               O4.style.opacity = "0";
             }
+            if(getPosition(dbMiddle).y + 30 >= getPosition(O5).y ){
+              O5.style.opacity = "1";
+            }
           }
         }
       }
