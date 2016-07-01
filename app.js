@@ -48,6 +48,12 @@ $(function () {
 
   var dagH2 = document.getElementById("dagH2");
 
+  var dbPassed = document.getElementById("dbPassed");
+  var stillPass = document.getElementById("stillPass");
+  var dbFail = document.getElementById("dbFail");
+  var stillFail = document.getElementById("stillFail");
+
+  var headerEnd = document.getElementById("headerEnd");
   $(window).on('scroll', master);
     function master(){
       //IF dbMiddle IS BELOW JENKINS
@@ -61,7 +67,7 @@ $(function () {
         jenkins_mad.style.display = "none"
         jenkins.style.display = "inline"
 
-        dbMiddle.style.opacity = "0"
+        dbMiddle.style.opacity = "0";
       }
 
       //IF dbMiddle IS BELOW JENKINS ALREADY
@@ -159,8 +165,54 @@ $(function () {
             } else {
 
             }
+            if(getPosition(dbMiddle).y + 400 >= getPosition(stillPass).y){
+              dbMiddle.style.opacity = "0";
+            }
+            if(getPosition(dbMiddle).y + 150 >= getPosition(stillPass).y){
+                    dbPassed.style.opacity = "1";
+                    if(movePass.style.left < 50){
+                      movePass.style.opacity = "1";
+                    }
 
+                    var b = function($b,speed){
 
+                    $b.animate({
+                        "left": "68%"
+                    }, speed);
+
+                  };
+                  if(parseInt(movePass.style.left) >= 66){
+                    movePass.style.opacity = "0";
+                  }
+
+                  $(function(){
+                    b($("#movePass"), 5000);
+                  });
+              }
+              if(getPosition(dbMiddle).y + 150 >= getPosition(stillFail).y){
+                      dbFail.style.opacity = "1";
+                      if(moveFail.style.left < 50){
+                        moveFail.style.opacity = "1";
+                      }
+
+                      var b = function($b,speed){
+
+                      $b.animate({
+                          "left": "68%"
+                      }, speed);
+
+                    };
+                    if(parseInt(moveFail.style.left) >= 66){
+                      moveFail.style.opacity = "0";
+                    }
+
+                    $(function(){
+                      b($("#moveFail"), 5000);
+                    });
+                }
+                if(getPosition(dbMiddle).y >= getPosition(headerEnd).y){
+                  headerEnd.style.opacity = 1;
+                }
           }
         }
       }

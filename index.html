@@ -50,6 +50,33 @@
         <img src="/icons/spark_star.png" class="fixed" class="icon" id="sparkStar"></img>
       </div>
     </div>
+
+
+
+    <div class="row">
+      <div class="col-xs-4">
+        <img src="/icons/dbGreen.png" class="fixed" class="icon" id="movePass"></img>
+      </div>
+      <div class="col-xs-4">
+
+      </div>
+      <div class="col-xs-4">
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-4">
+        <img src="/icons/dbRed.png" class="fixed" class="icon" id="moveFail"></img>
+      </div>
+      <div class="col-xs-4">
+
+      </div>
+      <div class="col-xs-4">
+
+      </div>
+    </div>
+
+
   </div>
 
     <div class="section" id="header">
@@ -58,23 +85,27 @@
       </h1>
       <br>
       <br>
-      <h2 style="text-decoration: underline">
+      <h2 style="text-decoration: underline" class="header-lines">
         Mission
       </h2>
       <h2 id="header-description">
         <br>
-        To continulally integrate the pcd-workflow build in order to promote frequent code contributions and early bug detection.
+          To continulally integrate the pcd-workflow build in order to promote frequent code contributions and early bug detection.
       </h2>
       <br>
       <br>
-      <h2 style="text-decoration: underline">
+      <h2 style="text-decoration: underline" class="header-lines">
         Project Description
       </h2>
       <h2 id="header-description">
         <br>
           For this project I performed automated acceptance testing with a multitude of technologies including:
-          Bamboo, Maven, Docker, Hadoop, Apache Spark, Oozie, and Scala. With the coordination of these technologies we are able to
-          run mockdata through our build end-to-end and compare the result to a golden data set. If the two data sets match we know our build is solid and
+          Bamboo, Maven, Docker, Hadoop, Apache Spark, Oozie, and Scala.
+          <br><br>
+          With the coordination of these technologies we are able to run mockdata through our build end-to-end
+          and compare the result to a golden data set.
+
+          If the two data sets match we know our build is solid and
           deemed a release candidate.
         </h2>
     </div>
@@ -113,6 +144,7 @@
             <br>
             <br>
             <br>
+            <br>
             <h2>
               Bamboo is a continuous intgration service from Atlassian that
               was chosen for this project due to its quick deployment time.
@@ -134,21 +166,23 @@
     <div class="section" id="repo">
       <div class="row">
 		    <div class="col-xs-4">
-          <h1>Sonatype Nexus</h1>
+          <h1>Sonatype Nexus</h1><br>
           <img src="/icons/nexus.png" class="icon" id="nexus">
+          <br><br>
 			    <h2>
-            Sonatype Nexus is an artifcat respository application that stores all of our finalized build dependecies.
+            Sonatype Nexus is an artifact respository application that stores all of our finalized build dependecies.
           </h2>
 		    </div>
 		    <div class="col-xs-4" class="middle-col">
           <img src="/icons/db_group.png" class="icon" id="dbAttach">
 			  </div>
 		    <div class="col-xs-4">
-			    <h1>Git</h1>
+			    <h1>Git</h1><br>
           <img src="/icons/git.png" class="icon" id="git">
+          <br><br>
 			    <h2>
-            Git is a code repositry that keeps track of our current code and
-            previous versions in case a revert is ever warranted.
+            Git is a distrubuted version control system that keeps track of our current code and
+            all previous versions.
           </h2>
 		    </div>
       </div>
@@ -165,8 +199,9 @@
           <br>
           <br>
           <h2>
-            Docker is a tool that wraps your software in a completey independent system complete with all dependencies.
-            This guarantees that the software will run the same no matter its environment.
+            Docker is a tool that wraps your software in an independent system complete with all dependencies.
+            <br><br>
+            This guarantees that the software will run in the same environment no matter where its deployed.
           </h2>
         </div>
         <div class="col-xs-4">
@@ -184,8 +219,8 @@
           <br>
           <br>
           <h2>
-            Cloudera provides a base image to create a Docker container.
-            This allows us to quickly set up a Hadoop environment which is required to run our build.
+            Cloudera is a company that developes Apache Hadoop based software and developed a base image
+            that was used to quickly set up our Hadoop environment.
           </h2>
         </div>
       </div>
@@ -209,7 +244,10 @@
             <br>
             <br>
             <h2>
-              Hadoop is a software framework that was used to store mock data and run spark jobs on a cluster
+              Hadoop is a framework that processes large sets of data in a distrubuted computing environment.
+              <br>
+              <br>
+              Hadoop was used to store data and run spark jobs on a cluster.
           </div>
           <div class="col-xs-4">
 
@@ -221,7 +259,10 @@
             <br>
             <br>
             <h2>
-              Spark is a big data processings framework built for speed. Spark runs all of our data analysis jobs in the project renaissance pipeline
+              Apache Spark is a big data processings framework built for speed and sophisticated analytics.
+              <br>
+              <br>
+              Spark runs all of our data analysis jobs in the project renaissance pipeline.
             </h2>
           </div>
         </div>
@@ -253,14 +294,14 @@
           <div class="col-xs-4">
             <br>
             <h2>
-              Oozie is a workflow scheduler system that manages our Hadoop and Spark jobs.
+              Oozie is a workflow scheduler system that connects and runs our Spark, Shell, and Sqoop actions.
             </h2>
             <br><br><br>
             <br><br><br>
             <br><br><br>
             <br><br><br>
             <h2 id="dagH2">
-              A complex directed acyclic graph of Spark jobs are triggered that performs the magical Project Renaissance data analysis.
+              A complex directed acyclic graph of Oozie actions are triggered that performs the Project Renaissance data analysis.
             </h2>
 
           </div>
@@ -281,8 +322,10 @@
         </div>
         <div class="col-xs-4">
           <h2>
-            Scala is a multiparadigm programming language that produces byte code that runs in the Java Virtual Machine. For our purposes we used
-            Scala to find any and all diferences between the processed mock data and the golden data set.
+            Scala is a functional programming language that runs in the Java Virtual Machine.
+            <br>
+            <br>
+            For our purposes we used Scala for writing Spark jobs and to find any and all diferences between the processed data and the golden data set.
           </h2>
         </div>
       </div>
@@ -337,28 +380,62 @@
     <div class="spacer">
 
     </div>
+    <div class="row"  id="dbPassed">
+      <div class="col-xs-4">
+        <br><br><br><br><br><br><br><br>
+        <img src="/icons/dbGreen.png" class="dbDiff" id="stillPass"></img>
+      </div>
+      <div class="col-xs-4">
+          <h1> Upon passing we send it off to Sonatype Nexus! </h1>
+
+      </div>
+      <div class="col-xs-4">
+        <br><br><br><br><br><br><br><br>
+        <img src="/icons/nexus.png" class="icon" id="nexus">
+      </div>
+    </div>
+  </div>
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <div class="row"  id="dbFail">
+      <div class="col-xs-4">
+        <br><br><br><br><br><br><br><br>
+        <img src="/icons/dbRed.png" class="dbDiff" id="stillFail"></img>
+      </div>
+      <div class="col-xs-4">
+          <h1> Upon failure we simply trash the build and try again.</h1>
+
+      </div>
+      <div class="col-xs-4">
+        <br><br><br><br><br><br><br><br>
+       <img src="/icons/trash.png" class="dbDiff" ></img>
+      </div>
+    </div>
+  </div>
     <div class="spacer">
 
     </div>
+    <div class="section" id="headerEnd">
+      <h1>
+        Project Renaissance
+      </h1>
+      <br>
+      <br>
+      <img src="/icons/spark_star.png" class="icons" style="display:inline-block" id="cen"></img>
+      <h2 style="display:inline-block">
+        Developer: Jeremy Bohannon
+      </h2>
+      <img src="/icons/spark_star.png" class="icons" style="display:inline-block" id="cen"></img>
+      <br>
+      <h2>
+        Team: Templars
+      </h2>
+
+    </div>
+  </div>
+
     <div class="spacer">
 
     </div>
-    <div class="spacer">
-
-    </div>
-    <div class="spacer">
-
-    </div>
-    <div class="spacer">
-
-    </div>
-    <div class="spacer">
-
-    </div>
-    <div class="spacer">
-
-    </div>
-
 </body>
 <footer>
 
